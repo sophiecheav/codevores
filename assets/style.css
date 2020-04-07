@@ -3,8 +3,9 @@
   display: block;
   width: 100%;
   border: 0;
-  margin: 10px;
   position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
 .logo-img
@@ -16,10 +17,17 @@
 header
 {
   display: flex;
-  background-color: #000;
-  opacity: 0.9;
-  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: flex-end;
+  align-items: center;
   color: #FFF;
+  font-size: 0.8em;
+  height: 80px;
+}
+
+.navbar-list
+{
+  align-self: flex-end;
 }
 
 nav
@@ -37,20 +45,42 @@ nav li
 {
   list-style-type: none;
   margin-right: 10px;
+}
 
+nav ul a
+{
+  text-decoration: none;
+  color: #FFF;
+}
+
+nav li a:hover
+{
+  color: #c80002;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+header button
+{
+  justify-content: flex-end;
 }
 
 .connect-btn
 {
-  height: 100%;
-  justify-content: flex-end;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-right: 10px;
+}
+
+.fa-unlock
+{
+  color: #FFF;
+  font-size: 1.5em;
 }
 
 .nav-burger
 {
   display: block;
-  width: 5%;
-  height: 5%;
   border: 0;
   margin: 10px;
 }
@@ -60,7 +90,7 @@ nav li
   background-image: url("assets/img/womancoding.png");
   width: 100%;
   height: 600px;
-  opacity: 0.6;
+  background-color: #ecd444;
   margin-top: 10px;
   margin-bottom: 20px;
   position: absolute;
@@ -72,14 +102,34 @@ nav li
   display: flex;
   text-align: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 600px;
   position: relative;
   z-index: 1;
 }
 
+h1
+{
+  font-size: 2.5em;
+  color: #FFF;
+}
+
+.enter-index h2
+{
+  font-size: 2em;
+  color: #FFF;
+}
+
+.search-bar
+{
+  width: 70%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 main
 {
-  display: flex;
   margin-top: 20px;
 }
 
@@ -87,8 +137,26 @@ footer
 {
   display: flex;
   justify-content: space-around;
-  background-color: #000;
-  opacity: 0.9;
-  width: 100%;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
   color: #FFF;
+}
+
+.middle a
+{
+  text-decoration: none;
+  color: #FFF;
+}
+
+.reseaux i
+{
+  font-size: 1.5em;
+  color: #FFF;
+}
+
+.reseaux a i:hover
+{
+  color: #c80002;
 }
