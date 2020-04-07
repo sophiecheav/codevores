@@ -1,3 +1,30 @@
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-list
+{
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar-list {
+    display: block;
+  }
+}
+
+.nav-burger
+{
+  display: block;
+}
+
+@media screen and (max-width: 769px) {
+  .nav-burger {
+    display: none;
+  }
+}
+
 .logo-div
 {
   position: absolute;
@@ -18,6 +45,7 @@ header
   align-items: center;
   color: #FFF;
   font-size: 1em;
+  font-weight: 400;
 }
 
 span
@@ -45,7 +73,7 @@ nav ul
 nav li
 {
   list-style-type: none;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 nav ul a
@@ -65,20 +93,13 @@ header button
   justify-content: flex-end;
 }
 
-.connect-btn
+#header-btn
 {
   color: #ecd444;
   font-size: 2em;
   margin-right: 20px;
   margin-left: 50px;
-  align-content: flex-end;
-}
-
-.subscribe-btn
-{
-  color: #ecd444;
-  font-size: 2em;
-  align-self: flex-end;
+  display: flex;
 }
 
 .nav-burger
@@ -113,12 +134,14 @@ h1
 {
   font-size: 2.5em;
   color: #FFF;
+  font-weight: 800;
 }
 
 .enter-index h2
 {
   font-size: 2em;
   color: #FFF;
+  font-weight: 500;
 }
 
 input .search-bar
@@ -130,11 +153,24 @@ input .search-bar
 {
   max-width: 70%;
   align-items: center;
+  font-weight: 300;
 }
 
 main
 {
   background-color: #ecd444;
+}
+
+h3
+{
+  font-size: 1.7em;
+  font-weight: 500;
+}
+
+p
+{
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 .card-deck
