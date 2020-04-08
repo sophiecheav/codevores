@@ -118,25 +118,40 @@ nav li a:hover
   align-self: flex-end;
 }
 
+.bg-img
+{
+  height: 600px;
+}
+
 .background-img-index
 {
   background-image: url("assets/img/womancoding.png");
   width: 100%;
-  height: 600px;
   background-color: #ecd444;
   padding-bottom: 20px;
   position: absolute;
   z-index: -1;
 }
 
-.enter-index
+/* .background-img-index
+{
+  background-image: url("assets/img/womancoding.png");
+  width: 100%;
+  background-color: #ecd444;
+  padding-bottom: 20px;
+
+} */
+.begin-index
 {
   display: flex;
   text-align: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
+}
+
+.enter-index
+{
+  position: relative;
+  z-index: 1;
 }
 
 h1
@@ -153,7 +168,7 @@ h1
   font-weight: 500;
 }
 
-input .search-bar
+.search-bar input
 {
   justify-content: center;
 }
@@ -169,7 +184,7 @@ main
 {
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin-top: 50px;
   background-color: #ecd444;
 }
 
@@ -236,14 +251,17 @@ footer
 
 /* CSS connexion.html */
 
+.div-connect-form
+{
+  display: flex;
+  max-width: 80%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 .connect-form
 {
-  max-width: 60%;
-  display: flex;
-  flex-direction: column;
 }
 
 .form-group
 {
-  align-items: center;
 }
