@@ -340,14 +340,44 @@ footer p
 
 /* CSS communaute.html */
 
-.community
+.banniere
 {
   display: flex;
+  text-align: right;
+  margin-top: 40px;
+  margin-right: 40px;
+  background-image: url("assets/img/joincommunity2.png");
+}
+
+.banniere img
+{
+  width: 60%;
+  height: auto;
+  margin-left: 40px;
+}
+
+.banniere h1
+{
+  font-size: 2.5em;
+  font-weight: 800;
+}
+
+.banniere h2
+{
+  font-size: 1.8em;
+  font-weight: 500;
 }
 
 .com-profil
 {
   width: 60%;
+  background-color: #ecd444;
+  display: flex;
+  flex-direction: column;
+}
+
+.position-relative
+{
   justify-content: center;
 }
 
@@ -361,10 +391,66 @@ footer p
 {
   font-size: 1.2em;
   font-weight: 600;
+  color: #119DA4;
 }
 
 .descriptif-profil p
 {
   font-size: 1em;
   font-weight: 400;
+}
+
+.descriptif-profil a
+{
+  color: #119DA4;
+  font-weight: bold;
+  text-decoration: none;
+}
+.descriptif-profil button
+{
+  background-color: #119DA4;
+  border: none;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  margin-top: 20px;
+}
+
+.descriptif-profil button a
+{
+  color: #eff8e2;
+  text-decoration: none;
+}
+
+/* Notation étoile */
+
+.fa-star {
+	color: gray;
+	cursor: pointer;
+	padding: 0.0625rem;
+}
+
+.fa-star.gold {
+	color: #ffdc0f;
+}
+
+.rating {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+  margin-top: 20px;
+}
+
+.stars {
+  display: inline-flex;
+  justify-content: flex-start;
+  font-size: 1em;
+}
+
+.stars:hover .fa-star {
+  color: #ffdc0f;
+}
+
+.stars .fa-star:hover ~ .fa-star {
+  color: gray;
 }
