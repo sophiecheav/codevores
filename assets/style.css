@@ -2,7 +2,14 @@
 blanc : #eff8e2
 jaune : #ecd444
 bleu : #119DA4
-gris : #353b48 */
+gris : #353b48
+
+font-size / weight :
+h1 : 2.5em / 800
+h2 : 2em / 500
+h3 : 1.7 / 500
+p : 1.2 / 400
+*/
 
 body
 {
@@ -329,4 +336,35 @@ footer p
 
 .form-group
 {
+}
+
+/* CSS communaute.html */
+
+.community
+{
+  display: flex;
+}
+
+.com-profil
+{
+  width: 60%;
+  justify-content: center;
+}
+
+.com-profil img
+{
+  width: 20%;
+  margin-right: 20px;
+}
+
+.descriptif-profil h3
+{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.descriptif-profil p
+{
+  font-size: 1em;
+  font-weight: 400;
 }
