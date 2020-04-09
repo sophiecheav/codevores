@@ -6,7 +6,7 @@ gris : #353b48
 
 font-size / weight :
 h1 : 2.5em / 800
-h2 : 2em / 500
+h2 : 1.8em / 500
 h3 : 1.7 / 500
 p : 1.2 / 400
 */
@@ -14,12 +14,13 @@ p : 1.2 / 400
 body
 {
     font-family: 'Montserrat', sans-serif;
-    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     background-color: #ecd444;
 }
+
+/* Responsive menu */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px){
@@ -70,6 +71,10 @@ body
     display: none;
   }
 }
+
+/* ---------------------------------- */
+
+/* Header */
 
 .logo-div
 {
@@ -156,51 +161,48 @@ nav li a:hover
   align-self: flex-end;
 }
 
-.bg-img
+/* Bannière index */
+
+/* .bg-img avant appliqué sur p container img
 {
   height: 600px;
-}
+} */
 
-.background-img-index
-{
-  background-image: url("assets/img/womancoding.png");
-  width: 100%;
-  background-color: #ecd444;
-  padding-bottom: 20px;
-  position: absolute;
-  z-index: -1;
-}
-
-.begin-index
-{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-}
-
-.enter-index
+.banniere-index
 {
   position: relative;
-  z-index: 1;
+  width: 100%;
+  text-align: center;
+  vertical-align: top;
 }
 
-h1
+.titre1
 {
-  font-size: 2.5em;
-  color: #FFF;
+  width: 100%;
+  position: absolute;
+  top: 250px;
+  text-align: center;
+  font-size: 2.8em;
+  color: #119DA4;
   font-weight: 800;
 }
 
-.enter-index h2
+.titre2
 {
-  font-size: 2em;
-  color: #FFF;
+  width: 100%;
+  position: absolute;
+  top: 320px;
+  text-align: center;
+  font-size: 1.8em;
+  color: #eff8e2;
   font-weight: 500;
 }
 
 /* search bar */
 .searchbar
 {
+position: absolute;
+top: 420px;
 margin-bottom: auto;
 margin-top: auto;
 height: 60px;
@@ -293,6 +295,7 @@ footer
   display: flex;
   justify-content: space-around;
   align-items: center;
+  vertical-align: bottom;
   padding-top: 20px;
   background-color: rgba(0, 0, 0, 0.9);
   text-align: center;
@@ -370,7 +373,7 @@ footer p
 
 .com-profil
 {
-  width: 60%;
+  width: 50%;
   background-color: #ecd444;
   display: flex;
   flex-direction: column;
@@ -411,7 +414,7 @@ footer p
   background-color: #119DA4;
   border: none;
   position: absolute;
-  right: 15px;
+  left: 25px;
   bottom: 15px;
   margin-top: 20px;
 }
