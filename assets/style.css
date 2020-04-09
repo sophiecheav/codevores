@@ -328,18 +328,20 @@ footer p
 
 .div-connect-form
 {
-  display: flex;
-  max-width: 80%;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.connect-form
-{
+  width: 60%;
 }
 
-.form-group
+.connect-form
 {
+  display: flex;
+  flex-direction: column;
 }
+
+.form-control
+{
+  justify-content: center;
+}
+
 
 /* CSS communaute.html */
 
@@ -456,4 +458,72 @@ footer p
 
 .stars .fa-star:hover ~ .fa-star {
   color: gray;
+}
+
+/* CSS espace-pro.html */
+
+.btn-blue
+{
+  background-color: #119DA4;
+  color: #eff8e2;
+}
+
+main
+{
+}
+
+.creer-profil
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.creer-profil-text
+{
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.creer-profil-img
+{
+  margin-right: 40px;
+}
+
+.composer-equipe
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.composer-equipe-img
+{
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.composer-equipe-img
+{
+  margin-right: 40px;
+}
+
+.join-community
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.join-community-text
+{
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.join-community-img
+{
+  margin-right: 40px;
 }
