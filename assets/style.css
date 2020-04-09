@@ -476,9 +476,10 @@ main
 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  width: 80%
 }
 
 .creer-profil-text
