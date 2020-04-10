@@ -10,14 +10,20 @@ h2 : 1.8em / 500
 h3 : 1.7 / 500
 p : 1.2 / 400
 */
+*
+{
+  margin: 0;
+  padding: 0;
+}
 
 body
 {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    margin: 0;
-    padding: 0;
     background-color: #ecd444;
+    position: relative;
+    margin: 0 auto;
+    min-height: 100%;
 }
 
 /* Responsive menu */
@@ -161,6 +167,26 @@ nav li a:hover
   align-self: flex-end;
 }
 
+/* Footer */
+
+footer
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  position: absolute;
+  width: 100%;
+}
+
+footer p
+{
+  color: #eff8e2;
+  font-size: 1em;
+}
+
 /* Bannière index */
 
 /* .bg-img avant appliqué sur p container img
@@ -290,23 +316,6 @@ p
   font-weight: 400;
 }
 
-footer
-{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  vertical-align: bottom;
-  padding-top: 20px;
-  background-color: rgba(0, 0, 0, 0.9);
-  text-align: center;
-}
-
-footer p
-{
-  color: #eff8e2;
-  font-size: 1em;
-}
-
 .middle a
 {
   text-decoration: none;
@@ -407,64 +416,88 @@ footer p
 
 .descriptif-profil a
 {
-  color: #119DA4;
-  font-weight: bold;
+  color: #eff8e2;
+  font-weight: normal;
   text-decoration: none;
 }
+
 .descriptif-profil button
 {
   background-color: #119DA4;
   border: none;
   position: absolute;
-  left: 25px;
+  left: 15px;
   bottom: 15px;
   margin-top: 20px;
 }
 
-.descriptif-profil button a
+.descriptif-profil button:hover
 {
-  color: #eff8e2;
-  text-decoration: none;
+  background-color: #ecd444;
+  color: #119DA4;
 }
 
 /* Notation étoile */
 
-.fa-star {
-	color: gray;
-	cursor: pointer;
-	padding: 0.0625rem;
+.row {
+  text-align: center;
+  justify-content: flex-end;
+  margin-right: 15px;
 }
 
-.fa-star.gold {
-	color: #ffdc0f;
-}
-
-.rating {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+.rate {
+  display: inline-block;
   margin-top: 20px;
+  padding: 0;
+  border: none;
+  align-self: flex-end;
 }
 
-.stars {
-  display: inline-flex;
-  justify-content: flex-start;
-  font-size: 1em;
+input {
+  display: none;
 }
 
-.stars:hover .fa-star {
-  color: #ffdc0f;
+label {
+  float: right;
+  font-size: 0;
+  color: #d9d9d9;
 }
 
-.stars .fa-star:hover ~ .fa-star {
-  color: gray;
+label:before {
+  content: "\f005";
+  font-family: FontAwesome;
+  font-size: 20px;
 }
+
+label:hover,
+label:hover ~ label {
+  color: #f6c82c;
+  transition: 0.2s;
+}
+
+input:checked ~ label {
+  color: #f6c82c;
+}
+
+input:checked ~ label:hover,
+input:checked ~ label:hover ~ label {
+  color: #FFED85;
+  transition: 0.2s;
+}
+
 
 /* CSS espace-pro.html */
 
 .btn-blue
 {
   background-color: #119DA4;
+  color: #eff8e2;
+  border: none;
+  text-decoration : none;
+}
+
+.btn-blue a
+{
   color: #eff8e2;
 }
 
@@ -527,4 +560,49 @@ main
 .join-community-img
 {
   margin-right: 40px;
+}
+
+/* CSS profil-dev.html */
+
+.bloc-page
+{
+  display: flex;
+  justify-content: center;
+}
+
+.cv-page
+{
+  background-color: #eff8e2;
+  width: 80%;
+}
+
+.en-tete
+{
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-column-gap: 15px;
+}
+
+.en-tete img
+{
+  width: 80%;
+}
+
+.contact
+{
+  display: grid;
+}
+
+.contact-btn
+{
+  width: 70%;
+  height: 50%;
+  justify-self: center;
+  font-size: 0.8em;
+}
+
+.contact .row
+{
+  justify-self: center;
+  align-self: start;
 }
