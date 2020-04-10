@@ -564,6 +564,7 @@ main
 
 /* CSS profil-dev.html */
 
+/* En-tête */
 .bloc-page
 {
   display: flex;
@@ -572,6 +573,8 @@ main
 
 .cv-page
 {
+  display: flex;
+  flex-direction: column;
   background-color: #eff8e2;
   width: 80%;
 }
@@ -606,3 +609,30 @@ main
   justify-self: center;
   align-self: start;
 }
+
+/* Compétences */
+.competences
+{
+  background-color: #119DA4;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.competences h4
+{
+  font-weight: bold;
+  color: #ecd444;
+}
+
+.competences ul
+{
+  margin-left: 20px;
+}
+
+.competences li
+{
+  color: #eff8e2;
+}
+
+/* Réalisations */
