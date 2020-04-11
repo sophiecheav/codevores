@@ -445,7 +445,7 @@ p
   margin-right: 15px;
 }
 
-.rate {
+.fichecommunaute {
   display: inline-block;
   margin-top: 20px;
   padding: 0;
@@ -584,11 +584,34 @@ main
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
   grid-column-gap: 15px;
+  background-color: #030027;
+  padding: 20px 20px;
 }
 
 .en-tete img
 {
-  width: 80%;
+  width: 60%;
+}
+
+.presentation h2
+{
+  color: #eff8e2;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.presentation h3
+{
+  color: #eff8e2;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.presentation p
+{
+  color: #eff8e2;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 .contact
@@ -601,28 +624,59 @@ main
   width: 70%;
   height: 50%;
   justify-self: center;
+  align-self: center;
   font-size: 0.8em;
 }
 
-.contact .row
+.stars-ficheprofil
 {
-  justify-self: center;
-  align-self: start;
+  justify-content: center;
+}
+
+/* Réalisations */
+.realisations h4
+{
+  color: #030027;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.carousel-control-prev-icon
+{
+  background-color: black;
+  background-size: 15px 15px;
+}
+
+.carousel-control-next-icon
+{
+  background-color: black;
+  background-size: 15px 15px;
 }
 
 /* Compétences */
+.row-blocs
+{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
 .competences
 {
-  background-color: #119DA4;
-  width: 100%;
+  background-color: #030027;
+  width: 30%;
   height: auto;
-  margin-top: 20px;
 }
 
 .competences h4
 {
+  font-size: 1.5em;
   font-weight: bold;
-  color: #ecd444;
+  color: #eff8e2;
+  padding-bottom: 15px;
 }
 
 .competences ul
@@ -633,6 +687,44 @@ main
 .competences li
 {
   color: #eff8e2;
+  font-size: 1.1em;
 }
 
-/* Réalisations */
+/* Témoignages */
+.temoignages
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 2fr;
+  grid-column-gap: 25px;
+  width: 60%;
+  height: auto;
+  background-color: #030027;
+  width: 65%;
+  padding: 0px 15px 0px 15px;
+  justify-content: flex-end;
+}
+
+.temoignages h4
+{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #eff8e2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.temoignages p
+{
+  color: #eff8e2;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.temoignages span
+{
+  font-size: 1.5em;
+}
