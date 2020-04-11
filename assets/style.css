@@ -5,10 +5,11 @@ bleu : #119DA4
 gris : #353b48
 
 font-size / weight :
-h1 : 2.5em / 800
-h2 : 1.8em / 500
-h3 : 1.7 / 500
-p : 1.2 / 400
+h1 : 2.7vw / 800
+h2 : 2.4vw / 500
+h3 : 1.7vw / 500
+h4 : 1.7vw / 500
+p : 1.4vw / 400
 */
 *
 {
@@ -577,40 +578,43 @@ main
   flex-direction: column;
   background-color: #eff8e2;
   width: 80%;
+  padding-bottom: 1%;
 }
 
 .en-tete
 {
   display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
-  grid-column-gap: 15px;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-column-gap: 4%;
   background-color: #030027;
-  padding: 20px 20px;
+  padding: 1.5% 1.5%;
 }
 
 .en-tete img
 {
-  width: 60%;
+  width: 80%;
+  justify-self: center;
+  align-self: center;
 }
 
 .presentation h2
 {
   color: #eff8e2;
-  font-size: 1.7em;
+  font-size: 2.4vw;
   font-weight: bold;
 }
 
 .presentation h3
 {
   color: #eff8e2;
-  font-size: 1.2em;
+  font-size: 1.7vw;
   font-weight: 400;
 }
 
 .presentation p
 {
   color: #eff8e2;
-  font-size: 1.2em;
+  font-size: 1.4vw;
   font-weight: 400;
 }
 
@@ -625,22 +629,33 @@ main
   height: 50%;
   justify-self: center;
   align-self: center;
-  font-size: 0.8em;
+}
+
+.contact-btn a
+{
+  font-size: 1.3vw;
+  font-weight: 500;
 }
 
 .stars-ficheprofil
 {
-  justify-content: center;
+  justify-self: center;
+  align-self: center;
 }
 
 /* Réalisations */
+.realisations
+{
+  margin-top: 6%;
+  margin-bottom: 3%;
+}
+
 .realisations h4
 {
   color: #030027;
-  font-size: 1.5em;
+  font-size: 1.8vw;
   font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 3%;
   text-align: center;
 }
 
@@ -661,7 +676,7 @@ main
 {
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 3%;
 }
 
 .competences
@@ -673,15 +688,15 @@ main
 
 .competences h4
 {
-  font-size: 1.5em;
+  font-size: 1.7vw;
   font-weight: bold;
   color: #eff8e2;
-  padding-bottom: 15px;
+  padding-bottom: 2%;
 }
 
 .competences ul
 {
-  margin-left: 20px;
+  margin-left: 10%;
 }
 
 .competences li
@@ -696,22 +711,22 @@ main
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 2fr 2fr;
-  grid-column-gap: 25px;
+  grid-column-gap: 7%;
   width: 60%;
   height: auto;
   background-color: #030027;
   width: 65%;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 3% 0px 3%;
   justify-content: flex-end;
 }
 
 .temoignages h4
 {
-  font-size: 1.5em;
+  font-size: 1.7vw;
   font-weight: bold;
   color: #eff8e2;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 3%;
+  padding-bottom: 2%;
   grid-column: 1 / span 2;
   grid-row: 1 / span 1;
 }
@@ -719,12 +734,11 @@ main
 .temoignages p
 {
   color: #eff8e2;
-  font-size: 1.1em;
+  font-size: 1.4vw;
   line-height: 1.5em;
-  text-align: justify;
 }
 
 .temoignages span
 {
-  font-size: 1.5em;
+  font-size: 1.7vw;
 }
