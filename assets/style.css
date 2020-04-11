@@ -15,11 +15,11 @@ p : 1.4vw / 400
 {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body
 {
-    font-family: 'Montserrat', sans-serif;
     width: 100%;
     background-color: #ecd444;
     position: relative;
@@ -245,7 +245,7 @@ border: 0;
 outline: 0;
 background: none;
 width: 0;
-caret-color: transparent;
+color: transparent;
 line-height: 40px;
 transition: width 0.4s linear;
 }
@@ -254,7 +254,7 @@ transition: width 0.4s linear;
 {
 padding: 0 10px;
 width: 450px;
-caret-color: #ecd444;
+color: #eff8e2;
 transition: width 0.4s linear;
 }
 
@@ -454,7 +454,7 @@ p
   align-self: flex-end;
 }
 
-input {
+.rate input {
   display: none;
 }
 
@@ -476,18 +476,34 @@ label:hover ~ label {
   transition: 0.2s;
 }
 
-input:checked ~ label {
+.rate input:checked ~ label {
   color: #f6c82c;
 }
 
-input:checked ~ label:hover,
-input:checked ~ label:hover ~ label {
+.rate input:checked ~ label:hover,
+.rate input:checked ~ label:hover ~ label {
   color: #FFED85;
   transition: 0.2s;
 }
 
 
 /* CSS espace-pro.html */
+.title h1
+{
+  color: #119DA4;
+  font-size: 2.7vw;
+  font-weight: 800;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.title h2
+{
+  color: #353b48;
+  font-size: 2.3vw;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
 
 .btn-blue
 {
@@ -500,67 +516,106 @@ input:checked ~ label:hover ~ label {
 .btn-blue a
 {
   color: #eff8e2;
+  font-size: 1.3vw;
+  font-weight: 500;
 }
 
-main
+.btn-blue :hover
 {
+  color: #212529;
+  text-decoration: none;
 }
 
 .creer-profil
 {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 80%
+  margin-top: 4%;
+  margin-bottom: 5%;
+  width: 100%
 }
 
 .creer-profil-text
 {
-  margin-left: 40px;
-  margin-right: 20px;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.creer-profil-text ul
+{
+  margin-left: 5%;
 }
 
 .creer-profil-img
 {
-  margin-right: 40px;
+  justify-content: center;
+  margin-right: 10%;
+}
+
+.creer-profil-text h3
+{
+  font-size: 1.8vw;
+  font-weight: 600;
+  color: #119DA4;
 }
 
 .composer-equipe
 {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 
 .composer-equipe-img
 {
-  margin-left: 40px;
-  margin-right: 20px;
+  margin-left: 10%;
+  margin-right: 5%;
 }
 
-.composer-equipe-img
+.composer-equipe-text ul
 {
-  margin-right: 40px;
+  margin-left: 5%;
+}
+
+.composer-equipe-text
+{
+  margin-right: 10%;
+}
+
+.composer-equipe-text h3
+{
+  font-size: 1.8vw;
+  font-weight: 600;
+  color: #119DA4;
 }
 
 .join-community
 {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 
 .join-community-text
 {
-  margin-left: 40px;
-  margin-right: 20px;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.join-community-text ul
+{
+  margin-left: 5%;
+}
+
+.join-community-text h3
+{
+  font-size: 1.8vw;
+  font-weight: 600;
+  color: #119DA4;
 }
 
 .join-community-img
 {
-  margin-right: 40px;
+  margin-right: 10%;
 }
 
 /* CSS profil-dev.html */
@@ -629,12 +684,6 @@ main
   height: 50%;
   justify-self: center;
   align-self: center;
-}
-
-.contact-btn a
-{
-  font-size: 1.3vw;
-  font-weight: 500;
 }
 
 .stars-ficheprofil
