@@ -278,6 +278,8 @@ color: #eff8e2;
 text-decoration:none;
 }
 
+/* Main / Card index */
+
 main
 {
   display: flex;
@@ -317,6 +319,8 @@ p
   font-size: 1.2em;
   font-weight: 400;
 }
+
+/* Footer */
 
 .middle a
 {
@@ -836,4 +840,66 @@ label:hover ~ label {
 .card-codevores h4
 {
   margin-top: 2%;
+}
+
+/* FAQ */
+
+.banniere-sos img
+{
+  margin-right: 10%;
+}
+
+.banniere-sos p
+{
+  margin-top: 5%;
+  color: #353b48;
+}
+
+.color-blue
+{
+  color: #119DA4;
+}
+
+.color-blue:hover
+{
+  text-decoration: none;
+  color: #353b48;
+}
+
+.accordion
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0% 10% 10% 10%;
+}
+
+.accordion-content
+{
+  justify-content: center;
+  padding: 3%;
+  background-color: #eff8e2;
+}
+
+.accordion-content h2
+{
+  color: #ecd444;
+  font-weight: bold;
+}
+
+.accordion-resp
+{
+  margin: 3%;
+  text-align: justify;
+}
+
+.accordion-btn
+{
+  color: #030027;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accordion-btn:hover
+{
+  color: #119DA4;
 }
