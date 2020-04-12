@@ -189,12 +189,24 @@ footer p
   font-size: 1em;
 }
 
-/* Bannière index */
-
-/* .bg-img avant appliqué sur p container img
+.middle a
 {
-  height: 600px;
-} */
+  text-decoration: none;
+  color: #eff8e2;
+}
+
+.reseaux i
+{
+  font-size: 1.5em;
+  color: #eff8e2;
+}
+
+.reseaux a i:hover
+{
+  color: #ecd444;
+}
+
+/* Bannière index */
 
 .banniere-index
 {
@@ -319,44 +331,6 @@ p
   font-size: 1.2em;
   font-weight: 400;
 }
-
-/* Footer */
-
-.middle a
-{
-  text-decoration: none;
-  color: #eff8e2;
-}
-
-.reseaux i
-{
-  font-size: 1.5em;
-  color: #eff8e2;
-}
-
-.reseaux a i:hover
-{
-  color: #ecd444;
-}
-
-/* CSS connexion.html */
-
-.div-connect-form
-{
-  width: 60%;
-}
-
-.connect-form
-{
-  display: flex;
-  flex-direction: column;
-}
-
-.form-control
-{
-  justify-content: center;
-}
-
 
 /* CSS communaute.html */
 
@@ -514,6 +488,8 @@ label:hover ~ label {
   font-weight: 500;
   margin-bottom: 5%;
 }
+
+/* Bouton blue */
 
 .btn-blue
 {
