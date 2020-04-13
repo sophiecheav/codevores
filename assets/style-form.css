@@ -105,17 +105,17 @@ span
   font-weight: bold;
 }
 
+::placeholder
+{
+  font-size: 1.2vw;
+}
+
   /* Menu nav */
 
-/* .navbar-list
+.menu
 {
-  align-self: flex-end;
-} */
-
-/* nav ul
-{
-  margin-right: 30%;
-} */
+  width: 50%;
+}
 
 nav li
 {
@@ -140,6 +140,7 @@ nav li a:hover
   background-color: transparent;
   border: none;
   cursor: pointer;
+  font-size: 2.5vw;
 }
 
 .closemenu-btn
@@ -237,6 +238,11 @@ footer p
 {
   text-decoration: none;
   color: #eff8e2;
+}
+
+.middle a:hover
+{
+  color: #ecd444;
 }
 
 .reseaux p
@@ -361,7 +367,30 @@ p
   align-items: center;
   border-radius: 50%;
   color: #eff8e2;
-  text-decoration:none;
+  text-decoration: none;
+}
+
+/* Bouton blue */
+
+.btn-blue
+{
+  background-color: #119DA4;
+  color: #eff8e2;
+  border: none;
+  text-decoration : none;
+}
+
+.btn-blue a
+{
+  color: #eff8e2;
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+.btn-blue :hover
+{
+  color: #212529;
+  text-decoration: none;
 }
 
 /* Card index */
@@ -599,34 +628,10 @@ p
   margin-bottom: 5%;
 }
 
-/* Bouton blue */
-
-.btn-blue
-{
-  background-color: #119DA4;
-  color: #eff8e2;
-  border: none;
-  text-decoration : none;
-}
-
-.btn-blue a
-{
-  color: #eff8e2;
-  font-size: 1.3vw;
-  font-weight: 500;
-}
-
-.btn-blue :hover
-{
-  color: #212529;
-  text-decoration: none;
-}
-
 .creer-profil
 {
   display: flex;
   margin-top: 4%;
-  margin-bottom: 5%;
   width: 100%
 }
 
@@ -658,7 +663,6 @@ p
 {
   display: flex;
   align-items: center;
-  margin-bottom: 5%;
 }
 
 .composer-equipe-img
@@ -913,19 +917,94 @@ p
   color: #030027;
 }
 
+.basic ul
+{
+  margin-left: 10%;
+}
+
+.basic li
+{
+  margin-bottom: 2%;
+}
+
+.card-basic
+{
+  background-color: #119DA4;
+  color: #eff8e2;
+}
+
 .card-basic h4
 {
   margin-top: 3%;
+  font-size: 1.9vw;
+  font-weight: 500;
+}
+
+.card-basic li
+{
+  font-size: 1.5vw;
+  font-weight: 400;
+  text-align: left;
+}
+
+.premium ul
+{
+  margin-left: 10%;
+}
+
+.premium li
+{
+  margin-bottom: 2%;
+}
+
+.card-premium
+{
+  background-color: #119DA4;
+  color: #eff8e2;
 }
 
 .card-premium h4
 {
   margin-top: 3%;
+  font-size: 1.9vw;
+  font-weight: 500;
+}
+
+.card-premium li
+{
+  font-size: 1.5vw;
+  font-weight: 400;
+  text-align: left;
+}
+
+.allcodevores ul
+{
+  margin-left: 10%;
+}
+
+.allcodevores li
+{
+  margin-bottom: 2%;
+}
+
+.card-codevores
+{
+  background-color: #119DA4;
+  color: #eff8e2;
 }
 
 .card-codevores h4
 {
   margin-top: 2%;
+  font-size: 1.9vw;
+  font-weight: 500;
+}
+
+.card-codevores li
+{
+  font-size: 1.5vw;
+  font-weight: 400;
+  text-align: left;
 }
 
 /* FAQ */
@@ -939,6 +1018,9 @@ p
 {
   margin-top: 5%;
   color: #353b48;
+  text-align: right;
+  font-size: 1.7vw;
+  font-weight: 500;
 }
 
 .color-blue
@@ -969,6 +1051,7 @@ p
 .accordion-content h2
 {
   color: #ecd444;
+  font-size: 2.2vw;
   font-weight: bold;
 }
 
@@ -981,6 +1064,7 @@ p
 .accordion-btn
 {
   color: #030027;
+  font-size: 1.4vw;
   font-weight: bold;
   cursor: pointer;
 }
@@ -1087,4 +1171,57 @@ p
 .send-cv-input
 {
   margin-top: 2%;
+}
+
+/* Actus */
+
+.logo_geek
+{
+  max-width: 15vw;
+  max-height: 7vw;
+}
+
+.gz-title h3
+{
+  color: #ecd444;
+  font-size: 2.2vw;
+}
+
+.gz-articles
+{
+  border: 2px solid #eff8e2;
+  background-color: #030027;
+  font-size: 1.2vw;
+  padding: 2%;
+  margin-bottom: 5%;
+  overflow: hidden;
+}
+
+.gz-articles li
+{
+  color: #eff8e2;
+  margin-left: 4%;
+  padding-bottom: 1%;
+}
+
+.gz-articles a
+{
+  color: #eff8e2;
+  margin-left: 2%;
+}
+
+.gz-articles a:hover
+{
+  color: #ecd444;
+  text-decoration: none;
+}
+
+.gz-img
+{
+  margin-right: 3%;
+}
+
+.title h2
+{
+  font-size: 1.7vw;
 }

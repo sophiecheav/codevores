@@ -82,7 +82,7 @@ body
 
 /* ---------------------------------- */
 
-/* Header */
+/* ------------- Header ------------- */
 
 header
 {
@@ -103,15 +103,18 @@ span
   color: #ecd444;
   font-weight: bold;
 }
-/*
-.navbar-list
-{
-  align-self: flex-end;
-} */
 
-nav ul
+::placeholder
 {
-  display: flex;
+  font-size: 1.2vw;
+}
+
+  /* Menu nav */
+
+
+.menu
+{
+  width: 50%;
 }
 
 nav li
@@ -132,17 +135,37 @@ nav li a:hover
   text-decoration: none;
 }
 
+.menu button
+{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5vw;
+}
+
+.closemenu-btn
+{
+  color: #ecd444;
+  background-color: transparent;
+}
+
+.page img
+{
+  cursor: pointer;
+}
+
 .nav-burger-container
 {
   display: block;
   border: none;
   background-color: none;
   width: 20%;
+  margin-left: 5%;
 }
 
 .nav-burger
 {
-  width: 65%;
+  width: 45%;
 }
 
 .logo-img
@@ -156,10 +179,27 @@ nav li a:hover
   justify-content: flex-end;
 }
 
-
 .subscribe-btn
 {
-  margin-right: 4%;
+  font-size: 1.3vw !important;
+}
+
+.connect-btn
+{
+  font-size: 1.3vw !important;
+  margin-left: 4%;
+}
+
+.dropdown-inscription a
+{
+  font-size: 1.2vw;
+  color: #353b48;
+}
+
+.dropdown-inscription a:hover
+{
+  color: #ecd444;
+  text-decoration: none;
 }
 
 /* Footer */
@@ -200,6 +240,11 @@ footer p
   color: #eff8e2;
 }
 
+.middle a:hover
+{
+  color: #ecd444;
+}
+
 .reseaux p
 {
   text-align: center;
@@ -231,9 +276,9 @@ footer p
 {
   width: 100%;
   position: absolute;
-  top: 40%;
+  top: 50%;
   text-align: center;
-  font-size: 5vw;
+  font-size: 4vw;
   color: #119DA4;
   font-weight: 800;
 }
@@ -242,9 +287,9 @@ footer p
 {
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 65%;
   text-align: center;
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: #eff8e2;
   font-weight: 500;
 }
@@ -277,7 +322,7 @@ p
 .searchbar
 {
   position: absolute;
-  top: 64%;
+  top: 85%;
   margin-bottom: auto;
   margin-top: auto;
   height: 60px;
@@ -322,7 +367,7 @@ p
   align-items: center;
   border-radius: 50%;
   color: #eff8e2;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 /* Card index */
@@ -522,6 +567,11 @@ p
 }
 
 /* Notation étoile */
+
+.presentation p
+{
+  margin-left: 1%;
+}
 
 .row {
   text-align: center;
@@ -822,7 +872,6 @@ label:hover ~ label {
 {
   background-color: #030027;
   width: 30%;
-  height: auto;
 }
 
 .competences h4
@@ -836,12 +885,13 @@ label:hover ~ label {
 .competences ul
 {
   margin-left: 10%;
+  font-size: 1.1em;
 }
 
 .competences li
 {
   color: #eff8e2;
-  font-size: 1.1em;
+  font-size: 1.4vw;
 }
 
 /* Témoignages */
@@ -850,13 +900,10 @@ label:hover ~ label {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 2fr 2fr;
-  grid-column-gap: 7%;
-  width: 60%;
-  height: auto;
+  grid-column-gap: 4%;
   background-color: #030027;
   width: 65%;
   padding: 0px 3% 0px 3%;
-  justify-content: flex-end;
 }
 
 .temoignages h4
@@ -864,7 +911,7 @@ label:hover ~ label {
   font-size: 1.7vw;
   font-weight: bold;
   color: #eff8e2;
-  padding-top: 3%;
+  padding-top: 7%;
   padding-bottom: 2%;
   grid-column: 1 / span 2;
   grid-row: 1 / span 1;
@@ -874,7 +921,7 @@ label:hover ~ label {
 {
   color: #eff8e2;
   font-size: 1.4vw;
-  line-height: 1.5em;
+  line-height: 1.7vw;
 }
 
 .temoignages span
