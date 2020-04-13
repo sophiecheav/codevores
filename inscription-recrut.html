@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/60e0dfbdcb.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style-form.css">
+    <title>Codevores.co | Inscription</title>
+  </head>
+
+  <body>
+
+    <!-- Header -->
+
+      <header>
+
+        <!-- Colonne menu burger-->
+
+        <div class="menu">
+          <button onclick="hideShowMenu()" type="button" name="button" class="closemenu-btn"><i class="fas fa-times-circle"></i></button>
+
+        <nav>
+          <ul>
+            <li><a href="communaute.html">Communauté</a></li>
+            <li><a href="espace-pro.html">Candidates</a></li>
+            <li><a href="recruteur.html">Recruteur.se.s</a></li>
+            <li><a href="actus.html">Actus</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+        <!-- Page contenu -->
+
+        <div class="nav-burger-container page">
+          <img onclick="hideShowMenu()" src="assets/img/burger-menu-blanc_petit.png" alt="picto menu burger" class="nav-burger openmenu-btn img-fluid">
+        </div>
+
+        <a href="index.html"><img src="assets/img/logo/logo-codevores-web2.png" alt="logo codevores.co" class="logo-img img-fluid"></a>
+
+    <!-- Header buttons : inscription/connexion -->
+
+        <div class="header-btn">
+
+          <div class="btn-group dropleft">
+            <button type="button" class="btn btn-yellow subscribe-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inscription
+            </button>
+            <div class="dropdown-menu dropdown-inscription">
+              <p><a href="inscription-dev">Je suis développeuse</a></p>
+              <p><a href="inscription-recruteur">Je recrute</a></p>
+            </div>
+          </div>
+
+
+          <div class="btn-group">
+
+            <button type="button" class="btn btn-yellow connect-btn">Connexion</button>
+            <button type="button" class="btn btn-yellow dropdown-toggle dropdown-toggle-split connect-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+
+            <!-- Formulaire connexion -->
+
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="div-connect-form">
+
+                <form class="connect-form">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Adresse mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemple@exemple.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Mot de passe</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="•••••••••">
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                  </div>
+                  <button type="submit" class="btn btn-blue submit-btn"><a href="profil-dev.html">Envoyer</a></button>
+                </form>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- Formulaire inscription recruteur -->
+
+      <div class="container py-3 subscribe-form">
+        <div class="form-title shadow p-3 rounded">
+          <h1>J'adhère à Codevores</h1>
+          <h2>Recruteuse, recruteur</h2>
+        </div>
+        <div class="card card-subscribe">
+          <div class="card-body card-subscribe-body shadow p-3 rounded">
+            <form role="form" class="row">
+              <div class="form-group col-lg-4">
+                <label class="form-control-label contact-label" for="form-group-input">Nom *</label>
+                <input type="text" class="form-control" id="form-group-input" name="name" required autofocus>
+              </div>
+              <div class="form-group col-lg-4">
+                <label class="form-control-label contact-label" for="form-group-input">Prénom *</label>
+                <input type="text" class="form-control" id="form-group-input" name="first name" required>
+              </div>
+              <div class="form-group col-lg-4">
+                <label class="form-control-label contact-label" for="form-group-input">Adresse mail *</label>
+                <input type="email" class="form-control" id="form-group-input" name="email" placeholder="exemple@exemple.com" required>
+              </div>
+              <div class="form-group col-lg-6">
+                <label class="form-control-label contact-label" for="form-group-input">Mot de passe *</label>
+                <input type="password" class="form-control" id="form-group-input" name="password" placeholder="••••••••••••••••" required>
+              </div>
+              <div class="form-group col-lg-6">
+                <label class="form-control-label contact-label" for="form-group-input">Répétez le mot de passe *</label>
+                <input type="password" class="form-control" id="form-group-input" name="password" placeholder="••••••••••••••••" required>
+              </div>
+              <div class="form-group col-lg-12">
+                <label class="form-control-label contact-label" for="form-group-input">Nom de votre entreprise, association...</label>
+                <input type="text" class="form-control" id="form-group-input" name="adress" placeholder="n°, rue, appt">
+              </div>
+              <div class="form-group col-lg-12">
+                <label class="form-control-label contact-label" for="form-group-input">Adresse</label>
+                <input type="text" class="form-control" id="form-group-input" name="adress" placeholder="n°, rue, nom de service">
+              </div>
+              <div class="form-group col-lg-4">
+                <label class="form-control-label contact-label" for="form-group-input">Code postal</label>
+                <input type="text" class="form-control" id="form-group-input" name="code postal">
+              </div>
+              <div class="form-group col-lg-8">
+                <label class="form-control-label contact-label" for="form-group-input">Ville</label>
+                <input type="text" class="form-control" id="form-group-input" name="city">
+              </div>
+              <div class="form-group col-lg-4">
+                <label class="form-control-label contact-label" for="form-group-input">Téléphone</label>
+                <input type="tel" class="form-control" id="form-group-input" name="phonenumber">
+              </div>
+              <div class="col-sm-2 find-text">Je recherche une dév :</div>
+              <div class="col-sm-6">
+                <div class="custom-control custom-checkbox checkbox-text">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">en  freelance</label>
+                </div>
+                <div class="custom-control custom-checkbox checkbox-text">
+                  <input type="checkbox" class="custom-control-input" id="customCheck2">
+                  <label class="custom-control-label" for="customCheck2">en CDD</label>
+                </div>
+                <div class="custom-control custom-checkbox checkbox-text">
+                  <input type="checkbox" class="custom-control-input" id="customCheck3">
+                  <label class="custom-control-label" for="customCheck3">en CDI</label>
+                </div>
+              </div>
+              <div class="col-sm-4 find-text">Je suis intéressé.e par :</div>
+
+                <div class="find-text-hire">
+
+                  <input type="checkbox" class="custom-control-input custom-checkbox" id="customCheck4">
+                  <label class="custom-control-label" for="customCheck4">l'adhésion Basic</label>
+
+                  <input type="checkbox" class="custom-control-input" id="customCheck5">
+                  <label class="custom-control-label" for="customCheck5">l'adhésion Premium</label>
+
+                  <input type="checkbox" class="custom-control-input" id="customCheck6">
+                  <label class="custom-control-label" for="customCheck6">l'adhésion All Codevores</label>
+
+                </div>
+
+              <div class="custom-file col-lg-10 send-cv-input">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label send-cv-label" for="customFile">Envoyer mon CV, portfolio...</label>
+              </div>
+              <div class="form-group col-lg-12">
+                <button type="submit" class="btn btn-yellow float-center contact-btn" for="form-group-input">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+  <!-- Footer -->
+
+  <footer>
+
+    <div class="left">
+      <p class="maj-bold">MENTIONS LÉGALES</p>
+      <p><i class="far fa-copyright"></i> Descodeuses 2020</p>
+    </div>
+
+    <div class="middle">
+      <p class="maj-bold">OÙ NOUS TROUVER :</p>
+      <p>17 rue des Ogres<br>
+      88 000 VENTREREPU</p>
+      <p>Port : 06 93 88 66 93</p>
+      <p>Mail : <a href="mailto:sophie.cheavseang@gmail.com">contact@codevores.co</a></p>
+    </div>
+
+    <div class="reseaux">
+      <p class="maj-bold">SUIVEZ-NOUS :</p>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://twitter.com/login" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fab fa-instagram-square"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+  </footer>
+
+  <script type="text/javascript" src="assets/script.js">
+  </script>
+
+
+  </body>
+</html>

@@ -12,6 +12,7 @@ h3 : 1.7vw / 500
 h4 : 1.7vw / 500
 p : 1.4vw / 400
 */
+
 *
 {
   margin: 0;
@@ -82,7 +83,7 @@ body
 
 /* ---------------------------------- */
 
-/* Header */
+/* ------------- Header ------------- */
 
 header
 {
@@ -104,15 +105,17 @@ span
   font-weight: bold;
 }
 
+  /* Menu nav */
+
 /* .navbar-list
 {
   align-self: flex-end;
 } */
 
-nav ul
+/* nav ul
 {
-  display: flex;
-}
+  margin-right: 30%;
+} */
 
 nav li
 {
@@ -132,17 +135,36 @@ nav li a:hover
   text-decoration: none;
 }
 
+.menu button
+{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.closemenu-btn
+{
+  color: #ecd444;
+  background-color: transparent;
+}
+
+.page img
+{
+  cursor: pointer;
+}
+
 .nav-burger-container
 {
   display: block;
   border: none;
   background-color: none;
   width: 20%;
+  margin-left: 5%;
 }
 
 .nav-burger
 {
-  width: 65%;
+  width: 45%;
 }
 
 .logo-img
@@ -158,7 +180,25 @@ nav li a:hover
 
 .subscribe-btn
 {
-  margin-right: 4%;
+  font-size: 1.3vw !important;
+}
+
+.connect-btn
+{
+  font-size: 1.3vw !important;
+  margin-left: 4%;
+}
+
+.dropdown-inscription a
+{
+  font-size: 1.2vw;
+  color: #353b48;
+}
+
+.dropdown-inscription a:hover
+{
+  color: #ecd444;
+  text-decoration: none;
 }
 
 /* Footer */
@@ -230,9 +270,9 @@ footer p
 {
   width: 100%;
   position: absolute;
-  top: 40%;
+  top: 50%;
   text-align: center;
-  font-size: 5vw;
+  font-size: 4vw;
   color: #119DA4;
   font-weight: 800;
 }
@@ -241,9 +281,9 @@ footer p
 {
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 65%;
   text-align: center;
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: #eff8e2;
   font-weight: 500;
 }
@@ -276,7 +316,7 @@ p
 .searchbar
 {
   position: absolute;
-  top: 64%;
+  top: 85%;
   margin-bottom: auto;
   margin-top: auto;
   height: 60px;
@@ -325,31 +365,46 @@ p
 }
 
 /* Card index */
-
-.card
+.communaute
 {
-  border-radius: 25%;
   margin-bottom: 5%;
 }
 
-.card-body
+.recrutement
+{
+  margin-bottom: 5%;
+}
+
+.card-body-index
 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: #119DA4;
-  border-radius: 0% 0% 15% 15%;
   color: #eff8e2;
   text-align: center;
-  padding-bottom: 10%;
+  padding-bottom: 20%;
 }
 
-.card-btn
+.card-title-index
+{
+  margin-top: 2%;
+}
+
+.card-btn-left
 {
   align-items: center;
-  margin: 0% 20% 0% 20%;
+  position: absolute;
+  bottom: 5%;
+  left: 31%;
 }
 
+.card-btn-right
+{
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  left: 26%;
+}
 /* Boutons yellow / blue */
 
 .btn-yellow
@@ -960,12 +1015,76 @@ p
 
 .contact-btn
 {
-  margin-top: 3%;
+  margin: 3% 0% 3% 0%;
   width: 15%;
+  font-size: 1.3vw;
+  font-weight: 600;
 }
 
 .title h4
 {
   color: #353b48;
   font-size: 1.7vw;
+}
+
+/* Inscription-dev */
+
+.subscribe-form
+{
+  margin-bottom: 5%;
+}
+
+.form-title
+{
+  background-color: #030027;
+  color: #eff8e2;
+  border: 2px #eff8e2 solid;
+  text-align: center;
+  padding: 2%;
+  margin-top: 5%;
+}
+
+.form-title h1
+{
+  color: #ecd444 !important;
+}
+
+.find-text
+{
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #eff8e2;
+}
+
+.checkbox-text
+{
+  color: #eff8e2;
+  font-size: 1.2vw;
+  top: 6%;
+}
+
+.send-cv-label
+{
+  top: 20%;
+  left: 1.7%;
+}
+
+.card-subscribe-body
+{
+  background-color: #030027;
+  padding-bottom: 3%;
+}
+
+/* Inscription recruteur */
+
+.find-text-hire label
+{
+  margin-right: 10%;
+  color: #eff8e2;
+  font-size: 1.2vw;
+}
+
+.send-cv-input
+{
+  margin-top: 2%;
 }
