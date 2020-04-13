@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
+
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/60e0dfbdcb.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/style-form.css">
-    <title></title>
+    <title>Codevores.co | Accueil</title>
   </head>
+
   <body>
 
+    <!-- Header -->
+
+      <header>
+
+        <!-- Colonne menu burger-->
+
+        <div class="menu">
+          <button onclick="hideShowMenu()" type="button" name="button" class="closemenu-btn"><i class="fas fa-times-circle"></i></button>
+        </div>
+
+        <!-- <nav>
+          <ul>
+            <li><a href="communaute.html">Communauté</a></li>
+            <li><a href="espace-pro.html">Candidates</a></li>
+            <li><a href="recruteur.html">Recruteur.se.s</a></li>
+            <li><a href="actus.html">Actus</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav> -->
+
+        <!-- Page contenu -->
+
+        <div class="nav-burger-container page">
+          <img onclick="hideShowMenu()" src="assets/img/burger-menu-blanc_petit.png" alt="image picto menu" class="nav-burger closemenu-btn img-fluid">
+        </div>
+
+        <a href="index.html>"><img src="assets/img/logo/logo-codevores-web2.png" alt="logo codevores.co" class="logo-img img-fluid"></a>
+
+        <!-- <nav class="navbar-list">
+          <ul>
+            <li><a href="communaute.html">Communauté</a></li>
+            <li><a href="espace-pro.html">Candidates</a></li>
+            <li><a href="recruteur.html">Recruteur.se.s</a></li>
+            <li><a href="actus.html">Actus</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav> -->
+
+    <!-- Header buttons : inscription/connexion -->
+
+        <div class="header-btn">
+
+          <button type="button" class="btn btn-yellow subscribe-btn"><a href="inscription.html">Inscription</a></button>
+
+          <div class="btn-group">
+
+            <button type="button" class="btn btn-yellow connect-btn">Connexion</button>
+            <button type="button" class="btn btn-yellow dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+
+            <!-- Formulaire connexion -->
+
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="div-connect-form">
+
+                <form class="connect-form">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Adresse mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemple@exemple.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Mot de passe</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="•••••••••">
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                  </div>
+                  <button type="submit" class="btn btn-blue submit-btn"><a href="profil-dev.html">Envoyer</a></button>
+                </form>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </header>
 
 
 

@@ -13,40 +13,89 @@
   </head>
   <body>
 
-  <!-- Header -->
+    <!-- Header -->
 
-  <header>
+      <header>
 
-    <div class="logo-div">
-      <a href="index.html">
-        <img src="assets/img/logo/logo-codevores-web2.png" alt="logo codevores.co" class="logo-img img-fluid">
-      </a>
-    </div>
+        <!-- Colonne menu burger-->
 
-    <div class="nav-burger-container">
-      <img src="assets/img/burger-menu-blanc_petit.png" alt="image picto menu" class="nav-burger img-fluid">
-    </div>
+        <div class="menu">
+          <button onclick="hideShowMenu()" type="button" name="button" class="closemenu-btn"><i class="fas fa-times-circle"></i></button>
+        </div>
 
-    <nav class="navbar-list">
-      <ul>
-        <li><a href="communaute.html">Communauté</a></li>
-        <li><a href="espace-pro.html">Candidates</a></li>
-        <li><a href="recruteur.html">Recruteur.se.s</a></li>
-        <li><a href="actus.html">Actus</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+        <!-- <nav>
+          <ul>
+            <li><a href="communaute.html">Communauté</a></li>
+            <li><a href="espace-pro.html">Candidates</a></li>
+            <li><a href="recruteur.html">Recruteur.se.s</a></li>
+            <li><a href="actus.html">Actus</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav> -->
 
-    <div class="header-btn">
+        <!-- Page contenu -->
 
-      <p class="bottom-align"><a href="connexion.html" title="Connexion"><i class="fas fa-unlock"  alt="bouton connexion"></i></a></p>
+        <div class="nav-burger-container page">
+          <img onclick="hideShowMenu()" src="assets/img/burger-menu-blanc_petit.png" alt="image picto menu" class="nav-burger closemenu-btn img-fluid">
+        </div>
 
-      <p class="bottom-align"><a href="inscription.html" title="Inscription"><i class="fas fa-edit" alt="bouton inscription"></i></a></p>
+        <a href="index.html>"><img src="assets/img/logo/logo-codevores-web2.png" alt="logo codevores.co" class="logo-img img-fluid"></a>
 
-    </div>
+        <!-- <nav class="navbar-list">
+          <ul>
+            <li><a href="communaute.html">Communauté</a></li>
+            <li><a href="espace-pro.html">Candidates</a></li>
+            <li><a href="recruteur.html">Recruteur.se.s</a></li>
+            <li><a href="actus.html">Actus</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav> -->
 
-  </header>
+    <!-- Header buttons : inscription/connexion -->
+
+        <div class="header-btn">
+
+          <button type="button" class="btn btn-yellow subscribe-btn"><a href="inscription.html">Inscription</a></button>
+
+          <div class="btn-group">
+
+            <button type="button" class="btn btn-yellow connect-btn">Connexion</button>
+            <button type="button" class="btn btn-yellow dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+
+            <!-- Formulaire connexion -->
+
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="div-connect-form">
+
+                <form class="connect-form">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Adresse mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemple@exemple.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Mot de passe</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="•••••••••">
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                  </div>
+                  <button type="submit" class="btn btn-blue submit-btn"><a href="profil-dev.html">Envoyer</a></button>
+                </form>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </header>
+
 
   <!-- Bannière -->
   <div class="banniere">
